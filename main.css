@@ -1,0 +1,99 @@
+    body {
+        font-family: Roboto, sans-serif;
+    }
+
+
+    .navbar {
+        background-color: #e15f41;
+        position: sticky;
+        top: 0;
+        z-index: 1030;
+        transition: border-bottom 0.3s ease;
+    }
+
+
+    #cabecalho .nav .nav-link,
+    .navbar-brand,
+    .navbar-brand:hover,
+    .nav-cardapio .nav-link.active:hover {
+        color: #fff;
+    }
+
+    #cabecalho .nav .nav-link.active {
+        background-color: transparent; 
+        color: #fff; 
+        border-bottom: 3px solid #fff; 
+    }
+
+    .navbar-toggler {
+        background-color: #ffeae6;
+    }
+
+    .section-title {
+        font-family: Pacifico, cursive;
+    }
+
+    .origem-bg,
+    #cardapio {
+        background-color: #ffeae6;
+    }
+
+    .text-colored {
+        color: #e15f41;
+    }
+
+    .nav-cardapio .nav-link.active,
+    #fale-conosco button {
+        background-color: #e15f41;
+        color: #fff;
+    }
+
+    .nav-cardapio .nav-link:hover {
+        color: #e15f41;
+    }
+
+    .social-links li {
+        list-style: none;
+        display: inline;
+        margin-right: 10px; 
+    }
+
+    .social-links a {
+        text-decoration: none;
+    }
+
+    @media (max-width: 767px) {
+        .carousel-item img {
+            height: 280px;
+        }
+    }
+
+    #carousel {
+        max-height: 650px;
+        overflow: hidden;
+    }
+
+    #carousel .carousel-item img {
+        height: 650px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .horario--e-reservas {
+        background-image: url(./Logo.png);
+    }
+
+    .list-no-style li {
+        list-style-type: none;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .img-evento {
+        max-width: 100%;
+        height: auto;
+        max-height: 600px;
+        border-radius: 8px;
+        object-fit: cover;
+        justify-content: space-between;
+    }
