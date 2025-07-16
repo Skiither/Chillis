@@ -1,667 +1,672 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chilis</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
-    />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="main.css" />
-</head>
-<body data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
-        <div class="container">
-            <a href="#" class="navbar-brand m-0 section-title">Chillis Tex Mex</a>
-            <img src="./Logo.png" alt="Logo Chillis" height="60" class="ps-4" />
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
-                <ul class="nav nav-pills d-block d-md-flex">
-                    <li class="nav-item fw-bold">
-                        <a href="#nossa-origem" class="nav-link">
-                            <i class="bi bi-house-door me-1"></i>
-                            Nossa origem
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#horarios-e-reservas" class="nav-link">
-                            <i class="bi bi-calendar-check me-1"></i>
-                            Horarios e reservas
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#cardapio" class="nav-link">
-                            <i class="bi bi-card-text me-1"></i>
-                            Nosso cardapio
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#contactos" class="nav-link">
-                            <i class="bi bi-envelope-fill me-1"></i> Contactos
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div>
-        <section id="nossa-origem">
-            <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" id="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./fridadoscalos_s.jpg" class="d-block w-100" alt="imagem da frida" />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./entrada chilis.jpg" class="d-block w-100" alt="Duas taças de vinho" />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./sitezzzz-1.jpg" class="d-block w-100" alt="Mesa com comida" />
-                    </div>
-                </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carousel"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carousel"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button
-                        type="button"
-                        data-bs-target="#carousel"
-                        class="active"
-                        data-bs-slide-to="0"
-                    ></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-                </div>
-            </div>
-
-            <div class="origem-bg pt-5 pb-5">
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Chilis</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+                rel="stylesheet"
+            />
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+            />
+            <link rel="stylesheet" href="main.css" />
+        </head>
+        <body data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+            <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img
-                                src="./c514-Chillis-Tex-Mex-food-1.jpg"
-                                class="d-block w-100 rounded"
-                                alt="foto do restaurante"
-                            />
-                        </div>
-                        <div class="col-md-7 mt-3 mt-md-0">
-                            <h2 class="section-title ps-5">
-                                Origem da <span class="text-colored"> nossa cozinha</span>
-                            </h2>
-
-                            <h5 class="section-title">Origem do Tex-Mex</h5>
-                            <p>
-                                Sabia que a denominação Tex-Mex nasce de uma abreviatura dada à companhia ferroviária Texas-Mexican Railway,
-                                fundada no ano de 1875? O nome sugeria uma denominação que remetia aos dois povos envolvidos (mexicanos e
-                                americanos nativos do Texas).
-                            </p>
-
-                            <h5 class="section-title">Cozinha Tex-Mex</h5>
-                            <p>
-                                Ao longo dos séculos, a cozinha Tex-Mex foi sofrendo influências variadas, procurando fundir tradições antigas do
-                                México e da cultura de rancho existente no Sul do Texas e no Norte do México.
-                            </p>
-
-                            <h5 class="section-title">Gastronomia</h5>
-                            <p>
-                                A gastronomia Tex-Mex surge dessa fusão de sabores tradicionais e oriundos dos dois povos, numa procura de harmonizar
-                                a cozinha local.
-                            </p>
-
-                            <h5 class="section-title">SABORES</h5>
-                            <p>
-                                Com as pinceladas que a história fez colorir a cozinha de sabores oriundos de outros continentes, procurou-se criar
-                                uma união de sabores em torno do Rio Bravo, hoje apreciada em todo o mundo. Bom apetite!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="horarios-e-reservas" class="pt-5 pb-5">
-            <div class="container">
-                <div class="row">
-                    <h2 class="section-title text-center">
-                        Horarios <span class="text-colored"> e reservas</span>
-                    </h2>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <img
-                            src="./Captura de tela 2025-06-25 094645.png"
-                            alt="Horarios"
-                            class="d-block w-100 rounded mb-2 img-evento"
-                        />
-                        <h3 class="section-title text-colored fs-4 text-center">
-                            <i class="bi bi-stopwatch"></i>
-                            Horarios
-                        </h3>
-                        <ul class="horarios list-unstyled" style="text-align: center;"> <li> <b>Quartas e quintas</b></li>
-                            <li>18:30 - 23:00</li>
-                            <li><b>Sextas</b></li>
-                            <li>18:30 - 00:00</li>
-                            <li><b>Sábados</b></li>
-                            <li>18:30 - 01:00</li>
-                            <li><b>Domingo</b></li>
-                            <li>12:30 - 15:30</li>
-                            <li>18:30 - 23:30</li>
-                        </ul>
-                        <p>
-                            <b>Atenção</b> a cozinha fecha 30 minutos antes do fecho do restaurante, e no inverno não abrimos domingo ao almoço.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img
-                            src="./reservas.png"
-                            alt="Imagem de comemoração de casamento"
-                            class="d-block w-100 rounded mb-2 img-evento"
-                        />
-                        <h3 class="section-title list-unstyled text-colored fs-4" style="text-align: center;">
-                            <i class="bi bi-calendar-event me-1"></i>
-                            Agendamento online
-                        </h3>
-                        <p>
-                            Agora você já pode fazer a sua reserva online sem precisar ligar, clique no link abaixo e selecione o melhorario para
-                            você.
-                        </p>
-                        <ul style="text-align: center;" class="list-unstyled">
-                            <li>
-                                <a
-                                    href="https://reservation.dish.co/shortlink/335131?fbclid=PAZXh0bgNhZW0CMTEAAacbG5oVjY7wpuUBwbFQTa7O228MgzTfDmKFqQF1dqW3OF8Ia-xFi8xpgO0wrw_aem_fVV77w47kVj3QG4wE_yCCw"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Clique aqui para reservar sua mesa</a
-                                >
+                    <a href="#" class="navbar-brand m-0 section-title">Chillis Tex Mex</a>
+                    <img src="./Logo.png" alt="Logo Chillis" height="60" class="ps-4" />
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                        <ul class="nav nav-pills d-block d-md-flex">
+                            <li class="nav-item fw-bold">
+                                <a href="#nossa-origem" class="nav-link">
+                                    <i class="bi bi-house-door me-1"></i>
+                                    Nossa origem
+                                </a>
+                            </li>
+                            <li class="nav-item fw-bold">
+                                <a href="#horarios-e-reservas" class="nav-link">
+                                    <i class="bi bi-calendar-check me-1"></i>
+                                    Horarios e reservas
+                                </a>
+                            </li>
+                            <li class="nav-item fw-bold">
+                                <a href="#cardapio" class="nav-link">
+                                    <i class="bi bi-card-text me-1"></i>
+                                    Nosso cardapio
+                                </a>
+                            </li>
+                            <li class="nav-item fw-bold">
+                                <a href="#contactos" class="nav-link">
+                                    <i class="bi bi-envelope-fill me-1"></i> Contactos
+                                </a>
                             </li>
                         </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div>
+                <section id="nossa-origem">
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" id="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./fridadoscalos_s.jpg" class="d-block w-100" alt="imagem da frida" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./entrada chilis.jpg" class="d-block w-100" alt="Duas taças de vinho" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./sitezzzz-1.jpg" class="d-block w-100" alt="Mesa com comida" />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carousel"
+                                class="active"
+                                data-bs-slide-to="0"
+                            ></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <section id="cardapio" class="pt-5 pb-5">
-            <div class="container">
-                <div class="row">
-                    <h2 class="section-title text-center mb-5">
-                        Nosso <span class="text-colored">Cardápio</span>
-                    </h2>
-                </div>
-                <div class="row">
-                    <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored active">Entradas</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="fw-bold text-start nav-link text-colored">Bebidas</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#cocktails" class="fw-bold text-start nav-link text-colored">Drinks</button>
-                        </nav>
-                    </aside>
-                    <div class="col-md-10">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="entradas">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/quesadilla.jpg" alt="coca-cola">
-                                        <h5 class="text-colored fw-bold mt-2">Quesadilhas</h5>
-                                        <p>Tortilha recheada com Queijo, Chourição, Milho e o nosso molho secreto.</p>
-                                        <ul>
-                                            <li>Valor - 1,10€ (Unidade)</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/chillis-best.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">CHILLI'S BEST</h5>
-                                        <p>Variação de entradas para duas pessoas.</p>
-                                        <ul>
-                                            <li>Valor - 12,90€</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/macaroca-de-milho.jpg" alt="coca-cola">
-                                        <h5 class="text-colored fw-bold mt-2">MAÇAROCA DE MILHO</h5>
-                                        <p>Milho grelhado com manteiga de alho ou de chilli.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 3,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/onion-rings.png" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">ONION RINGS</h5>
-                                        <p>Rodelas de Cebolas panadas acompanhadas com Guacamole.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 5,50€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/chilli-popoers.png" alt="coca-cola">
-                                        <h5 class="text-colored fw-bold mt-2">CHILLI POPPERS</h5>
-                                        <p>Almofadinhas de Jalapeño Verdes e Vermelhos panados com recheio de Queijo Creme.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 5,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/gambas-ao-alho.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">GAMBAS AL AJO</h5>
-                                        <p>Gambas ao Alho.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 11,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/guacamole_chilly_s_480-150x150.png" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">GUACAMOLE</h5>
-                                        <p>Preparado de Abacate envolvido na mesa com Chips de Nachos.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 13,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/special-nachos.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">SPECIAL NACHOS</h5>
-                                        <p>Nachos recheados com vários molhos caseiros, envolvidos com jalapeños e cebola roxa, cobertos de queijo gratinado e por fim acompanhados com molho Sour Cream e Guacamole.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 9,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./entradas/nachos.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-2">NACHOS</h5>
-                                        <p>Nachos envolvidos com jalapeños cobertos de queijo gratinado, acompanhados com molho Sour Cream.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 8,90€
-                                            </li>
-                                        </ul>
-                                    </div>
+
+                    <div class="origem-bg pt-5 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img
+                                        src="./c514-Chillis-Tex-Mex-food-1.jpg"
+                                        class="d-block w-100 rounded"
+                                        alt="foto do restaurante"
+                                    />
                                 </div>
-                            </div>
-                            <div class="tab-pane" id="pratos-principais">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/bulls-eye-burger.jpg" alt="Cerveja">
-                                        <h5 class="text-colored fw-bold mt-2">BULL’S EYE BURGER</h5>
-                                        <p>Hamburger de vaca com o nosso molho Dallas recheada com queijo, bacon, pickles e alface, acompanhada com batata Fry N’ Dip.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 15,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/jambalaya.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">JAMBALAYA DE GAMBAS</h5>
-                                        <p>Salteado de arroz “carabeño” com fruta exótica, gambas, legumes e creme de coco.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 18,40€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/t-bone.png" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">T-BONE STEAK</h5>
-                                        <p>Corte típico Texano com 850 gramas maturado por 25 dias, de um lado o vazio do outro o lombo, disfruta de dois prazeres em um.</p> <ul>
-                                            <li>
-                                                Valor - 44,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/spare-ribs.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">SPARE RIBS</h5>
-                                        <p>Costelinhas de Porco suculentas, marinadas com molho Barbecue.</p>
-                                        <ul>
-                                            <li>
-                                                ½ Dose – 11,90€
-                                                <br>
-                                                1 Dose – 19,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/lonestar-steak.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">LONE STAR STEAK</h5>
-                                        <p>250 gramas de Lombo Premium envolvido em bacon.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 17,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/chilli-con-carne.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">CHILLI CON CARNE</h5>
-                                        <p>Estufado de carne bovina com feijão, milho e chillis.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 15,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/burritos.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">BURRITOS</h5>
-                                        <p>Duas tortilhas de farinha enroladas e recheadas.</p>
-                                        <ul>
-                                            <li>
-                                                Valor Frango – 12,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/tacos.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">TACOS</h5>
-                                        <p>Duas tortilhas de milho crocantes dobradas e recheadas..</p>
-                                        <ul>
-                                            <li>
-                                                Chilli con carne- 15,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Pratos principais/fry-and-dip.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-2">ACOMPANHAMENTOS</h5>
-                                        <ul>
-                                            <li>
-                                                FRY ‘N’ DIP – 2,90€
-                                                <br>
-                                                CHILLI POTATOES – 2,90€
-                                                <br>
-                                                ARROZ DE LA ABUELA – 2,90€
-                                                <br>
-                                                SALADA – 2,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="sobremesas">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./sobremesa/bayleys-helado.jpg" alt="entrada">
-                                        <h5 class="text-colored fw-bold mt-2">BAILEYS HELADO</h5>
-                                        <p>Gelado de Chocolate de Leite e Chocolate Branco, regado com Baileys e Chantilly.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 6,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./sobremesa/coco-pina.jpg" alt="entrada">
-                                        <h5 class="text-colored fw-bold mt-2">COCO PIÑA</h5>
-                                        <p>Ananás fresco com Leite de coco, Mel, uma bola de gelado de Coco e Chantilly.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 7,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./sobremesa/pastel-de-chocolate.jpg" alt="entrada">
-                                        <h5 class="text-colored fw-bold mt-2">PASTEL DE CHOCOLATE</h5>
-                                        <p>Bolo cremoso de Chocolate quente com uma bola de Baunilha e Chantilly.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 5,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./sobremesa/churritos.jpg" alt="entrada">
-                                        <h5 class="text-colored fw-bold mt-2">CHURRITOS</h5>
-                                        <p>6 churros quentes envolvidos em açúcar e canela
-                                        para molhar no nosso Dulce de Leche, é de lamber os dedos .</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 11,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./sobremesa/churritos.jpg" alt="entrada">
-                                        <h5 class="text-colored fw-bold mt-2">LA SORPRESA CHILLI’S</h5>
-                                        <p>Variação de sobremesas para 2 pessoas.</p>
-                                        <ul>
-                                            <li>
-                                                Valor - 11,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="bebidas">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/agua.png" alt="pizza">
-                                        <h5 class="text-colored fw-bold mt-2">ÁGUA VITALIS 37cl</h5>
-                                        <p>Valor - 2,20€</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/agua com gas.jpg" alt="Salmao">
-                                        <h5 class="text-colored fw-bold mt-2">ÁGUA DAS PEDRAS</h5>
-                                        <p>Valor - 1,70€</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/coca cola.webp" alt="pizza">
-                                        <h5 class="text-colored fw-bold mt-2">COCA-COLA</h5>
-                                        <p>Valor - 2,20€</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/Coca_Cola-zero_Logo-150x150.jpg" alt="Salmao">
-                                        <h5 class="text-colored fw-bold mt-2">COCA-COLA ZERO</h5>
-                                        <p>Valor - 2,20€</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/Sprite-Logo-2008.png" alt="pizza">
-                                        <h5 class="text-colored fw-bold mt-2">SPRITE</h5>
-                                        <p>Valor - 2,20€</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/Fanta-logo.png" alt="Salmao">
-                                        <h5 class="text-colored fw-bold mt-2">FANTA LARANJA</h5>
-                                        <p>Valor - 2,20€</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/rpOFs_JY_400x400.jpg" alt="Salmao">
-                                        <h5 class="text-colored fw-bold mt-2">NESTEA</h5>
-                                        <p> Valor - 2,20€</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/cervejas.jpg" alt="Salmao">
-                                        <h5 class="text-colored fw-bold mt-2">Cervezas</h5>
-                                        <p>Corona - 3,20€</p>
-                                        <p>Negra Modelo - 3,20€</p>
-                                        <p>Pacifico - 4,20€</p>
-                                        <p>Salitos - 3,20€</p>
-                                        <p>Paulaner - 4,90€</p> <p>ST.Louis Framboise - 3,50€</p> </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="cocktails">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/pinacolada.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">PIÑA COLADA</h5>
-                                        <p>Cocktail exótico com Malibu, ananás e leite de côco.</p>
-                                        <ul>
-                                            <li>
-                                                Valor 9,80€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/marguerita.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">MARGARITA</h5>
-                                        <p>O verdadeiro cocktail mexicano com um perfeito balanço de tequila e lima fresca, decorado com sal.</p>
-                                        <ul>
-                                            <li>
-                                                Valor 7,50€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/mojito-150x150.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">MOJITO</h5>
-                                        <p>O nosso mojito dispensa qualquer tipo de apresentação.</p>
-                                        <ul>
-                                            <li>
-                                                Valor 8,00€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/caipirinha-150x150.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">CAIPIRINHA</h5>
-                                        <p>Um classico levado à perfeição .</p>
-                                        <ul>
-                                            <li>
-                                                Valor 7,50€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/lacalavera.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">LA CALAVERA</h5>
-                                        <p>Caveira gigante de gelo granizado, tequila e polpa de fruta com uma coronita inteira a a misturar-se lentamente com o cocktail.</p>
-                                        <ul>
-                                            <li>
-                                                Valor 19,90€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/mexicanmule.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">MEXICAN MULE</h5>
-                                        <p>Combinação de Cerveja de gengibre e tequila com toque picante.</p>
-                                        <ul>
-                                            <li>
-                                                Valor 7,50€
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="./Bebidas/tequilasunrise.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">TEQUILA SUNRISE</h5>
-                                        <p>Tequila silver com sumo de laranja e groselha. O nosso por do sol.</p>
-                                        <ul>
-                                            <li>
-                                                Valor 7,50€
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="col-md-7 mt-3 mt-md-0">
+                                    <h2 class="section-title ps-5">
+                                        Origem da <span class="text-colored"> nossa cozinha</span>
+                                    </h2>
+
+                                    <h5 class="section-title">Origem do Tex-Mex</h5>
+                                    <p>
+                                        Sabia que a denominação Tex-Mex nasce de uma abreviatura dada à companhia ferroviária Texas-Mexican Railway,
+                                        fundada no ano de 1875? O nome sugeria uma denominação que remetia aos dois povos envolvidos (mexicanos e
+                                        americanos nativos do Texas).
+                                    </p>
+
+                                    <h5 class="section-title">Cozinha Tex-Mex</h5>
+                                    <p>
+                                        Ao longo dos séculos, a cozinha Tex-Mex foi sofrendo influências variadas, procurando fundir tradições antigas do
+                                        México e da cultura de rancho existente no Sul do Texas e no Norte do México.
+                                    </p>
+
+                                    <h5 class="section-title">Gastronomia</h5>
+                                    <p>
+                                        A gastronomia Tex-Mex surge dessa fusão de sabores tradicionais e oriundos dos dois povos, numa procura de harmonizar
+                                        a cozinha local.
+                                    </p>
+
+                                    <h5 class="section-title">SABORES</h5>
+                                    <p>
+                                        Com as pinceladas que a história fez colorir a cozinha de sabores oriundos de outros continentes, procurou-se criar
+                                        uma união de sabores em torno do Rio Bravo, hoje apreciada em todo o mundo. Bom apetite!
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <p style="text-align: center; font-weight: 100%;">
-                    <b>Atenção:</b> O cardápio exibido acima pode conter informações desatualizadas ou preços incorretos. Para conferir a versão mais recente, acesse nosso menu atualizado no link a seguir: <a href="#">[Ver Menu Atualizado].
+                </section>
 
-</a>
-                </p>
-            </div>
-        </section>
-<section id="contactos" class="pt-5 pb-5">
+                <section id="horarios-e-reservas" class="pt-5 pb-5">
     <div class="container">
         <div class="row">
-        <h2 class="section-title text-center w-100 mb-4">Contacte <span class="text-colored">-nos</span></h2>
+        <h2 class="section-title text-center">
+            Horários <span class="text-colored">e reservas</span>
+        </h2>
         </div>
-        <div class="row">
-        <div class="col-md-6 mb-4">
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.720169267964!2d-8.739381784548165!3d41.351968879269616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2463e45b6a9f69%3A0xc7d383c9d683a6f6!2sR.%20Almeida%20Garrett%2C%204480-659%20Vila%20do%20Conde!5e0!3m2!1spt-PT!2spt!4v1687665723833!5m2!1spt-PT!2spt""
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <div class="row d-flex align-items-stretch mt-4">
+        <div class="col-md-6">
+            <img
+            src="./Captura de tela 2025-06-25 094645.png"
+            alt="Horários"
+            class="d-block w-100 rounded mb-2 img-evento"
+            />
+            <h3 class="section-title text-colored fs-4 text-center">
+            <i class="bi bi-stopwatch"></i> Horários
+            </h3>
+            <ul class="list-unstyled">
+            <li><strong>Segunda-feira:</strong> Fechado</li>
+            <li><strong>Terça-feira:</strong> Fechado</li>
+            <li><strong>Quarta e Quinta:</strong> 18h30 – 00h00</li>
+            <li><strong>Sexta e Sábado:</strong> 18h30 – 01h00</li>
+            <li><strong>Domingo:</strong> 12h30 – 15h00 | 18h30 – 00h00</li>
+            </ul>
+            <p><strong>Atenção:</strong> a cozinha fecha 30 minutos antes do fechamento do restaurante, e no inverno não abrimos domingo ao almoço.</p>
+            <p class="mt-2">
+        ⏰ <strong>Nota:</strong> Os horários podem sofrer alterações em feriados ou datas especiais. Para informações atualizadas, consulte as nossas redes sociais.
+                </p>
+
         </div>
         <div class="col-md-6">
-            <div class="mt-4">
-            <h3 class="section-title fs-4 text-colored">
-                <i class="bi bi-hand-thumbs-up-fill"></i>
-                Redes sociais
+            <img
+            src="./reservas.png"
+            alt="Imagem de comemoração de casamento"
+            class="d-block w-100 rounded mb-2 img-evento"
+            />
+            <h3 class="section-title list-unstyled text-colored fs-4 text-center">
+            <i class="bi bi-calendar-event me-1"></i> Agendamento online
             </h3>
-            <ul class="social-links">
-                <li class="fs-5 d-inline me-3">
-                <a href="https://www.facebook.com/ChillisTexMex/?locale=pt_PT" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-facebook text-colored"></i>
-                </a>
-                </li>
-                <li class="fs-5 d-inline me-3">
-                <a href="https://www.instagram.com/chillis_texmex/?hl=pt" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-instagram text-colored"></i>
-                </a>
-                </li>
+            <p>Reserve sua mesa com facilidade e garanta seu lugar em poucos cliques! Evite filas e aproveite o melhor da nossa gastronomia no horário que preferir. Basta preencher o formulário com seus dados e nós cuidamos do resto.</p>
+            <ul>
+            <li>✅ Rápido</li>
+            <li>✅ Sem complicações</li>
+            <li>✅ Confirmação por e-mail ou telefone</li>
             </ul>
-            </div>
-
-            <div class="mt-4">
-            <h3 class="section-title fs-4 text-colored">
-                <i class="bi bi-cursor-fill"></i>
-                Endereço
-            </h3>
-            <p>R. Almeida Garrett, 4480-659 Vila do Conde</p>
-            </div>
-
-            <div class="mt-4">
-            <h3 class="section-title fs-4 text-colored">
-                <i class="bi bi-telephone-fill"></i>
-                Telefone
-            </h3>
-            <p>252 059 241</p>
-            </div>
-
-            <div class="mt-4">
-            <h3 class="section-title fs-4 text-colored">
-                <i class="bi bi-envelope-fill"></i>
-                E-mail
-            </h3>
-            <p>geral@chillis.pt</p>
-            </div>
+            <p>Perfeito para jantares especiais, encontros em grupo ou uma simples refeição tranquila.</p>
+            <p>📅 Clique abaixo e reserve agora mesmo!</p>
+            <ul class="list-unstyled text-center">
+            <li>
+                <a
+                href="https://reservation.dish.co/shortlink/335131?fbclid=PAZXh0bgNhZW0CMTEAAacbG5oVjY7wpuUBwbFQTa7O228MgzTfDmKFqQF1dqW3OF8Ia-xFi8xpgO0wrw_aem_fVV77w47kVj3QG4wE_yCCw"
+                class="btn btn-primary">
+                Clique aqui para reservar sua mesa
+                </a>
+            </li>
+            </ul>
         </div>
         </div>
     </div>
     </section>
 
+            </div>
+            <section id="cardapio" class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="section-title text-center mb-5">
+                                Nosso <span class="text-colored">Cardápio</span>
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <aside class="col-md-2">
+                                <nav class="nav nav-pills flex-column nav-cardapio">
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored active">Entradas</button>
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="fw-bold text-start nav-link text-colored">Bebidas</button>
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#cocktails" class="fw-bold text-start nav-link text-colored">Drinks</button>
+                                </nav>
+                            </aside>
+                            <div class="col-md-10">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="entradas">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/quesadilla.jpg" alt="coca-cola">
+                                                <h5 class="text-colored fw-bold mt-2">Quesadilhas</h5>
+                                                <p>Tortilha recheada com Queijo, Chourição, Milho e o nosso molho secreto.</p>
+                                                <ul>
+                                                    <li>Valor - 1,10€ (Unidade)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/chillis-best.jpg" alt="Suco">
+                                                <h5 class="text-colored fw-bold mt-2">CHILLI'S BEST</h5>
+                                                <p>Variação de entradas para duas pessoas.</p>
+                                                <ul>
+                                                    <li>Valor - 12,90€</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/macaroca-de-milho.jpg" alt="coca-cola">
+                                                <h5 class="text-colored fw-bold mt-2">MAÇAROCA DE MILHO</h5>
+                                                <p>Milho grelhado com manteiga de alho ou de chilli.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 3,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/onion-rings.png" alt="Suco">
+                                                <h5 class="text-colored fw-bold mt-2">ONION RINGS</h5>
+                                                <p>Rodelas de Cebolas panadas acompanhadas com Guacamole.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 5,50€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/chilli-popoers.png" alt="coca-cola">
+                                                <h5 class="text-colored fw-bold mt-2">CHILLI POPPERS</h5>
+                                                <p>Almofadinhas de Jalapeño Verdes e Vermelhos panados com recheio de Queijo Creme.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 5,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/gambas-ao-alho.jpg" alt="Suco">
+                                                <h5 class="text-colored fw-bold mt-2">GAMBAS AL AJO</h5>
+                                                <p>Gambas ao Alho.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 11,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/guacamole_chilly_s_480-150x150.png" alt="Suco">
+                                                <h5 class="text-colored fw-bold mt-2">GUACAMOLE</h5>
+                                                <p>Preparado de Abacate envolvido na mesa com Chips de Nachos.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 13,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/special-nachos.jpg" alt="Suco">
+                                                <h5 class="text-colored fw-bold mt-2">SPECIAL NACHOS</h5>
+                                                <p>Nachos recheados com vários molhos caseiros, envolvidos com jalapeños e cebola roxa, cobertos de queijo gratinado e por fim acompanhados com molho Sour Cream e Guacamole.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 9,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./entradas/nachos.jpg" alt="Suco">
+                                                <h5 class="text-colored fw-bold mt-2">NACHOS</h5>
+                                                <p>Nachos envolvidos com jalapeños cobertos de queijo gratinado, acompanhados com molho Sour Cream.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 8,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="pratos-principais">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/bulls-eye-burger.jpg" alt="Cerveja">
+                                                <h5 class="text-colored fw-bold mt-2">BULL’S EYE BURGER</h5>
+                                                <p>Hamburger de vaca com o nosso molho Dallas recheada com queijo, bacon, pickles e alface, acompanhada com batata Fry N’ Dip.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 15,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/jambalaya.jpg" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">JAMBALAYA DE GAMBAS</h5>
+                                                <p>Salteado de arroz “carabeño” com fruta exótica, gambas, legumes e creme de coco.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 18,40€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/t-bone.png" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">T-BONE STEAK</h5>
+                                                <p>Corte típico Texano com 850 gramas maturado por 25 dias, de um lado o vazio do outro o lombo, disfruta de dois prazeres em um.</p> <ul>
+                                                    <li>
+                                                        Valor - 44,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/spare-ribs.jpg" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">SPARE RIBS</h5>
+                                                <p>Costelinhas de Porco suculentas, marinadas com molho Barbecue.</p>
+                                                <ul>
+                                                    <li>
+                                                        ½ Dose – 11,90€
+                                                        <br>
+                                                        1 Dose – 19,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/lonestar-steak.jpg" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">LONE STAR STEAK</h5>
+                                                <p>250 gramas de Lombo Premium envolvido em bacon.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 17,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/chilli-con-carne.jpg" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">CHILLI CON CARNE</h5>
+                                                <p>Estufado de carne bovina com feijão, milho e chillis.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 15,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/burritos.jpg" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">BURRITOS</h5>
+                                                <p>Duas tortilhas de farinha enroladas e recheadas.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor Frango – 12,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/tacos.jpg" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">TACOS</h5>
+                                                <p>Duas tortilhas de milho crocantes dobradas e recheadas..</p>
+                                                <ul>
+                                                    <li>
+                                                        Chilli con carne- 15,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Pratos principais/fry-and-dip.jpg" alt="Vinho">
+                                                <h5 class="text-colored fw-bold mt-2">ACOMPANHAMENTOS</h5>
+                                                <ul>
+                                                    <li>
+                                                        FRY ‘N’ DIP – 2,90€
+                                                        <br>
+                                                        CHILLI POTATOES – 2,90€
+                                                        <br>
+                                                        ARROZ DE LA ABUELA – 2,90€
+                                                        <br>
+                                                        SALADA – 2,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="sobremesas">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./sobremesa/bayleys-helado.jpg" alt="entrada">
+                                                <h5 class="text-colored fw-bold mt-2">BAILEYS HELADO</h5>
+                                                <p>Gelado de Chocolate de Leite e Chocolate Branco, regado com Baileys e Chantilly.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 6,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./sobremesa/coco-pina.jpg" alt="entrada">
+                                                <h5 class="text-colored fw-bold mt-2">COCO PIÑA</h5>
+                                                <p>Ananás fresco com Leite de coco, Mel, uma bola de gelado de Coco e Chantilly.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 7,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./sobremesa/pastel-de-chocolate.jpg" alt="entrada">
+                                                <h5 class="text-colored fw-bold mt-2">PASTEL DE CHOCOLATE</h5>
+                                                <p>Bolo cremoso de Chocolate quente com uma bola de Baunilha e Chantilly.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 5,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./sobremesa/churritos.jpg" alt="entrada">
+                                                <h5 class="text-colored fw-bold mt-2">CHURRITOS</h5>
+                                                <p>6 churros quentes envolvidos em açúcar e canela
+                                                para molhar no nosso Dulce de Leche, é de lamber os dedos .</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 11,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./sobremesa/churritos.jpg" alt="entrada">
+                                                <h5 class="text-colored fw-bold mt-2">LA SORPRESA CHILLI’S</h5>
+                                                <p>Variação de sobremesas para 2 pessoas.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor - 11,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="bebidas">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/agua.png" alt="pizza">
+                                                <h5 class="text-colored fw-bold mt-2">ÁGUA VITALIS 37cl</h5>
+                                                <p>Valor - 2,20€</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/agua com gas.jpg" alt="Salmao">
+                                                <h5 class="text-colored fw-bold mt-2">ÁGUA DAS PEDRAS</h5>
+                                                <p>Valor - 1,70€</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/coca cola.webp" alt="pizza">
+                                                <h5 class="text-colored fw-bold mt-2">COCA-COLA</h5>
+                                                <p>Valor - 2,20€</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/Coca_Cola-zero_Logo-150x150.jpg" alt="Salmao">
+                                                <h5 class="text-colored fw-bold mt-2">COCA-COLA ZERO</h5>
+                                                <p>Valor - 2,20€</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/Sprite-Logo-2008.png" alt="pizza">
+                                                <h5 class="text-colored fw-bold mt-2">SPRITE</h5>
+                                                <p>Valor - 2,20€</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/Fanta-logo.png" alt="Salmao">
+                                                <h5 class="text-colored fw-bold mt-2">FANTA LARANJA</h5>
+                                                <p>Valor - 2,20€</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/rpOFs_JY_400x400.jpg" alt="Salmao">
+                                                <h5 class="text-colored fw-bold mt-2">NESTEA</h5>
+                                                <p> Valor - 2,20€</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/cervejas.jpg" alt="Salmao">
+                                                <h5 class="text-colored fw-bold mt-2">Cervezas</h5>
+                                                <p>Corona - 3,20€</p>
+                                                <p>Negra Modelo - 3,20€</p>
+                                                <p>Pacifico - 4,20€</p>
+                                                <p>Salitos - 3,20€</p>
+                                                <p>Paulaner - 4,90€</p> <p>ST.Louis Framboise - 3,50€</p> </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="cocktails">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/pinacolada.jpg" alt="Bolo de chocolate">
+                                                <h5 class="text-colored fw-bold mt-2">PIÑA COLADA</h5>
+                                                <p>Cocktail exótico com Malibu, ananás e leite de côco.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor 9,80€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/marguerita.jpg" alt="Bolo de chocolate">
+                                                <h5 class="text-colored fw-bold mt-2">MARGARITA</h5>
+                                                <p>O verdadeiro cocktail mexicano com um perfeito balanço de tequila e lima fresca, decorado com sal.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor 7,50€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/mojito-150x150.jpg" alt="Bolo de chocolate">
+                                                <h5 class="text-colored fw-bold mt-2">MOJITO</h5>
+                                                <p>O nosso mojito dispensa qualquer tipo de apresentação.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor 8,00€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/caipirinha-150x150.jpg" alt="Bolo de chocolate">
+                                                <h5 class="text-colored fw-bold mt-2">CAIPIRINHA</h5>
+                                                <p>Um classico levado à perfeição .</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor 7,50€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/lacalavera.jpg" alt="Bolo de chocolate">
+                                                <h5 class="text-colored fw-bold mt-2">LA CALAVERA</h5>
+                                                <p>Caveira gigante de gelo granizado, tequila e polpa de fruta com uma coronita inteira a a misturar-se lentamente com o cocktail.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor 19,90€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/mexicanmule.jpg" alt="Bolo de chocolate">
+                                                <h5 class="text-colored fw-bold mt-2">MEXICAN MULE</h5>
+                                                <p>Combinação de Cerveja de gengibre e tequila com toque picante.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor 7,50€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./Bebidas/tequilasunrise.jpg" alt="Bolo de chocolate">
+                                                <h5 class="text-colored fw-bold mt-2">TEQUILA SUNRISE</h5>
+                                                <p>Tequila silver com sumo de laranja e groselha. O nosso por do sol.</p>
+                                                <ul>
+                                                    <li>
+                                                        Valor 7,50€
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="text-align: center; font-weight: 100%;">
+                            <b>Atenção:</b> O cardápio exibido acima pode conter informações desatualizadas ou preços incorretos. Para conferir a versão mais recente, acesse nosso menu atualizado no link a seguir: 
+                            <a href="#" class="btn btn-primary">[Ver Menu Atualizado].</a>
+                        </p>
+                    </div>
+                </section>
+        <section id="contactos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                <h2 class="section-title text-center w-100 mb-4">Contacte <span class="text-colored">-nos</span></h2>
+                </div>
+                <div class="row">
+                <div class="col-md-6 mb-4">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.720169267964!2d-8.739381784548165!3d41.351968879269616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2463e45b6a9f69%3A0xc7d383c9d683a6f6!2sR.%20Almeida%20Garrett%2C%204480-659%20Vila%20do%20Conde!5e0!3m2!1spt-PT!2spt!4v1687665723833!5m2!1spt-PT!2spt""
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="col-md-6">
+                    <div class="mt-4">
+                    <h3 class="section-title fs-4 text-colored">
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        Redes sociais
+                    </h3>
+                    <ul class="social-links">
+                        <li class="fs-5 d-inline me-3">
+                        <a href="https://www.facebook.com/ChillisTexMex/?locale=pt_PT" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook text-colored"></i>
+                        </a>
+                        </li>
+                        <li class="fs-5 d-inline me-3">
+                        <a href="https://www.instagram.com/chillis_texmex/?hl=pt" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram text-colored"></i>
+                        </a>
+                        </li>
+                        <li class="fs-5 d-inline me-3">
+                        <a href="https://wa.me/351916528863" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp text-colored"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="mt-4">
+                    <h3 class="section-title fs-4 text-colored">
+                        <i class="bi bi-cursor-fill"></i>
+                        Endereço
+                    </h3>
+                    <p>R. Almeida Garrett, 4480-659 Vila do Conde</p>
+                    </div>
+
+                    <div class="mt-4">
+                    <h3 class="section-title fs-4 text-colored">
+                        <i class="bi bi-telephone-fill"></i>
+                        Telefone
+                    </h3>
+                    <p>252 059 241</p>
+                    </div>
+
+                    <div class="mt-4">
+                    <h3 class="section-title fs-4 text-colored">
+                        <i class="bi bi-envelope-fill"></i>
+                        E-mail
+                    </h3>
+                    <p>geral@chillis.pt</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
