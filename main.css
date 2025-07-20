@@ -42,6 +42,10 @@
         color: #e15f41;
     }
 
+    .redes-sociais-contatos {
+        color: black;
+    }
+
     .nav-cardapio .nav-link.active,
     #fale-conosco button {
         background-color: #e15f41;
@@ -63,21 +67,8 @@
     }
 
     @media (max-width: 767px) {
-        .carousel-item img {
-            height: 280px;
-        }
     }
-
-    #carousel {
-        max-height: 650px;
-        overflow: hidden;
-    }
-
-    #carousel .carousel-item img {
-        height: 650px;
-        width: 100%;
-        object-fit: cover;
-    }
+    
 
     .horario--e-reservas {
         background-image: url(./Logo.png);
@@ -89,7 +80,7 @@
         text-decoration: none;
     }
 
-    .img-evento {
+    .img-horario-reserva {
         max-width: 100%;
         height: auto;
         max-height: 600px;
