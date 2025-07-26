@@ -129,3 +129,18 @@
         height: 180px;
     }
 }
+
+.menu-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;             
+    padding: 0;
+    margin: 0;
+}
+
