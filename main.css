@@ -34,7 +34,7 @@
     }
 
     .origem-bg,
-    .horario-e-reservas,
+    #horarios-e-reservas,
     #contactos {
         background-color: #ffeae6;
     }
