@@ -1,205 +1,206 @@
-    body {
-        font-family: Roboto, sans-serif;
-    }
-
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.25); 
-    backdrop-filter: blur(8px);
-    position: sticky;
-    top: 0;
-    z-index: 1030;
-    transition: background-color 0.3s ease;
-    color: white; 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita barra lateral no mobile */
+  font-family: Roboto, sans-serif;
 }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  transition: background-color 0.3s ease;
+  color: white;
+}
 
 .fundo1 {
-    background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0;
-    border: none;
+  background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  border: none;
 }
 
 .fundo2 {
-    background: linear-gradient(to bottom, #442bdb 0%, #89223b 100%);
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0;
-    border: none;
+  background: linear-gradient(to bottom, #442bdb 0%, #89223b 100%);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  border: none;
 }
 
 .fundo3 {
-    background: linear-gradient(to bottom, #89223b 0%, #9c791d 100%);
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0;
-    border: none;
+  background: linear-gradient(to bottom, #89223b 0%, #9c791d 100%);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  border: none;
 }
 
 .fundo4 {
-    background: linear-gradient(to bottom, #9c791d 0%, #4f2ac3 100%);
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0;
-    border: none;
+  background: linear-gradient(to bottom, #9c791d 0%, #4f2ac3 100%);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  border: none;
 }
 
 .fundo5 {
-    background: linear-gradient(to bottom, #4f2ac3 0%, #1b6ca7 100%);
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0;
-    border: none;
+  background: linear-gradient(to bottom, #4f2ac3 0%, #1b6ca7 100%);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  border: none;
 }
 
 .fundo6 {
-    background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0;
-    border: none;
+  background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  border: none;
 }
 
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+  color: #fff;
+}
 
+#cabecalho .nav .nav-link.active {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
 
-    #cabecalho .nav .nav-link,
-    .navbar-brand,
-    .navbar-brand:hover,
-    .nav-cardapio .nav-link.active:hover {
-        color: #fff;
-    }
+.navbar-toggler {
+  background-color: #ffeae6;
+}
 
-    #cabecalho .nav .nav-link.active {
-        background-color: transparent; 
-        color: #fff; 
-        border-bottom: 3px solid #fff; 
-    }
+.section-title {
+  font-family: Pacifico, cursive;
+}
 
-    .navbar-toggler {
-        background-color: #ffeae6;
-    }
+.origem-bg,
+#horarios-e-reservas,
+#contactos {
+  background-color: #ffeae6;
+}
 
-    .section-title {
-        font-family: Pacifico, cursive;
-    }
+.text-colored {
+  color: #e15f41;
+}
 
-    .origem-bg,
-    #horarios-e-reservas,
-    #contactos {
-        background-color: #ffeae6;
-    }
+.redes-sociais-contatos {
+  color: black;
+}
 
-    .text-colored {
-        color: #e15f41;
-    }
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+  background-color: #e15f41;
+  color: #fff;
+}
 
-    .redes-sociais-contatos {
-        color: black;
-    }
+.nav-cardapio .nav-link:hover {
+  color: #e15f41;
+}
 
-    .nav-cardapio .nav-link.active,
-    #fale-conosco button {
-        background-color: #e15f41;
-        color: #fff;
-    }
+.social-links li {
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+}
 
-    .nav-cardapio .nav-link:hover {
-        color: #e15f41;
-    }
+.social-links a {
+  text-decoration: none;
+}
 
-    .social-links li {
-        list-style: none;
-        display: inline;
-        margin-right: 10px; 
-    }
+.horario--e-reservas {
+  background-image: url(./Logo.png);
+}
 
-    .social-links a {
-        text-decoration: none;
-    }
+.list-no-style li {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+}
 
-    @media (max-width: 767px) {
-    }
-    
-
-    .horario--e-reservas {
-        background-image: url(./Logo.png);
-    }
-
-    .list-no-style li {
-        list-style-type: none;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .img-horario-reserva {
-        max-width: 100%;
-        height: auto;
-        max-height: 600px;
-        border-radius: 8px;
-        object-fit: cover;
-        justify-content: space-between;
-    }
+.img-horario-reserva {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  border-radius: 8px;
+  object-fit: cover;
+  justify-content: space-between;
+}
 
 .container-card {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .card {
-    width: calc(25% - 1.125rem);
-    height: 450px;
-    overflow: hidden;
-    border-radius: 0.75rem;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease;
-    cursor: pointer;
-    background-color: white;b
+  width: calc(25% - 1.125rem);
+  height: 450px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+  cursor: pointer;
+  background-color: white;
 }
 
 .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .card:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .container-card:hover > .card:not(:hover) {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-        height: 380px;
-    }
-}
-
+/* Menu - flexível e responsivo */
 .menu-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;             
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap; /* default */
 }
 
+/* Para telas pequenas, permitir que o menu quebre linha */
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+    height: 180px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+}
