@@ -7,14 +7,9 @@
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                    <link
-                        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-                        rel="stylesheet"
-                    />
-                    <link
-                        rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-                    />
+                    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+                    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
                     <link rel="stylesheet" href="main.css" />
                 </head>
                 <body data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
@@ -25,7 +20,7 @@
                             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao" >
                                 <ul class="nav nav-pills d-block d-md-flex">
                                     <li class="nav-item fw-bold">
                                         <a href="#nossa-origem" class="nav-link">
@@ -62,7 +57,7 @@
                     </header>
             <div>
             <section>
-                <div class="pt-5 pb-5 bg-light">
+                <div class="pt-5 pb-5 fundo1">
                     <div class="container">
                         <h2 class="section-title text-center mb-4">Nossas <span class="text-colored">Promoções</span></h2>
             <div class="row align-items-center">
@@ -98,13 +93,13 @@
         </div>
     </section>
                         <section id="nossa-origem">
-                            <div class="origem-bg pt-5 pb-5">
+                            <div class="origem-bg pt-5 pb-5 fundo2" >
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-5">
+                                        <div class="col-md-5" data-aos="fade-down">
                                                 <img src="./tex-mex.png" class="d-block w-100 rounded" style="height: 480px;" alt="foto do restaurante"/>
                                         </div>
-                                            <div class="col-md-7 mt-3 mt-md-0">
+                                            <div class="col-md-7 mt-3 mt-md-0" data-aos="fade-down">
                                                 <h2 class="section-title ps-5"> Origem da <span class="text-colored"> nossa cozinha</span></h2>
                                             <p class=" mt-4">A cozinha Tex-Mex tem uma história rica e fascinante que reflete a fusão cultural entre o Texas e o México. O termo “Tex-Mex” surgiu como uma abreviatura da Texas-Mexican Railway, uma linha ferroviária fundada em 1875, e acabou por se tornar sinónimo de uma culinária vibrante, que une sabores e tradições das culturas mexicana e texana. Ao longo dos séculos, essa cozinha foi ganhando influências de diversas origens, especialmente da cultura de rancho do sul do Texas e do norte do México, resultando numa gastronomia autêntica, colorida e cheia de personalidade. Combinando ingredientes típicos como pimentas, queijos, tortilhas e carnes temperadas, o Tex-Mex celebra a união de povos e paladares às margens do Rio Bravo. Hoje, é uma culinária apreciada em todo o mundo, trazendo à mesa um convite à partilha, ao sabor e à alegria. Bom apetite!</p>
                                         </div>
@@ -112,44 +107,37 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="visite-nos" class="py-5 bg-light">
+                        <section id="visite-nos" class="py-5 fundo3">
                                 <div class="container">
                                         <h2 class="section-title text-center mb-4">Visite <span class="text-colored">-nos</span> </h2>
                                             <p class="text-center mb-3">Conheça nosso espaço e venha nos visitar pessoalmente! Veja o vídeo para saber mais.</p>
                                     <div class="ratio ratio-16x9 mb-4">
-                                        <iframe 
-                                            src="https://www.youtube.com/embed/9xwazD5SyVg" 
+                                        <iframe data-aos="fade-left"
+                                            src="https://www.youtube.com/embed/Wz-zwDfhqK0" 
                                             title="Dummy Video For YouTube API Test"
                                             allowfullscreen 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                                         </iframe>
                                     </div>
                                     <div class="container-card">
-                                        <div class="card"><img src="./tex-mex.png" alt=""></div>
-                                        <div class="card"><img src="./tex-mex.png" alt=""></div>
-                                        <div class="card"><img src="./tex-mex.png" alt=""></div>
-                                        <div class="card"><img src="./tex-mex.png" alt=""></div>
+                                        <div data-aos="fade-down" class="card"><img src="./cards/galera_reunida-min.jpg" alt=""></div>
+                                        <div data-aos="fade-down" class="card"><img src="./cards/sai_um_amigo-min.jpg" alt=""></div>
+                                        <div data-aos="fade-down" class="card"><img src="./cards/fogo-min.jpg" alt=""></div>
+                                        <div data-aos="fade-down" class="card"><img src="./cards/aproveite-min.jpg" alt=""></div>
                                     </div>
                                         <p class="text-center fst-italic text-muted">Nosso espaço é pet friendly, mas para garantir conforto, só permitimos até <strong>4 pets por vez</strong>. Por favor, confirme sua visita antecipadamente.</p>
                                 </div>
                         </section>
-                        <section id="horarios-e-reservas" class="pt-5 pb-5">
+                        <section id="horarios-e-reservas" class="pt-5 pb-5 fundo4">
             <div class="container">
-                <div class="row">
-                <h2 class="section-title text-center">
-                    Horários <span class="text-colored">e reservas</span>
-                </h2>
+                <div data-aos="fade-up-right" class="row">
+                <h2 class="section-title text-center" style="color: black;"> Horários <span class="text-colored">e reservas</span> </h2>
                 </div>
-                <div class="row d-flex align-items-stretch mt-4">
-                <div class="col-md-6">
-                    <img
-                    src="./Captura de tela 2025-06-25 094645.png"
-                    alt="Horários"
-                    class="d-block w-100 rounded mb-2 img-horario-reserva"
-                    />
-                    <h3 class="section-title text-colored fs-4 text-center">
-                    <i class="bi bi-stopwatch"></i> Horários
-                    </h3>
+                <div data-aos="fade-up-right" class="row d-flex align-items-stretch mt-4">
+                <div data-aos="fade-up-right" class="col-md-6">
+                    <img src="./Captura de tela 2025-06-25 094645.png" alt="Horários" class="d-block w-100 rounded mb-2 img-horario-reserva"/>
+                    <h3 class="section-title text-colored fs-4 text-center" style="color: black;">
+                    <i class="bi bi-stopwatch" style="color: black;"></i> Horários </h3>
                     <ul class="list-unstyled">
                     <li><strong>Segunda-feira:</strong> Fechado</li>
                     <li><strong>Terça-feira:</strong> Fechado</li>
@@ -163,10 +151,9 @@
                         </p>
 
                 </div>
-                <div class="col-md-6">
-                    <img src="./reserva.png" alt="Imagem da mesa de comida" class="d-block w-100 rounded mb-2 img-horario-reserva"
-                    />
-                    <h3 class="section-title list-unstyled text-colored fs-4 text-center">
+                <div class="col-md-6" data-aos="fade-up-right">
+                    <img src="./reserva.jpg" alt="Imagem da mesa de comida" class="d-block w-100 rounded mb-2 img-horario-reserva"/>
+                    <h3 class="section-title list-unstyled text-colored fs-4 text-center" style="color: black;">
                     <i class="bi bi-calendar-event me-1"></i> Agendamento online
                     </h3>
                     <p>Reserve sua mesa com facilidade e garanta seu lugar em poucos cliques! Evite filas e aproveite o melhor da nossa gastronomia no horário que preferir. Basta preencher o formulário com seus dados e nós cuidamos do resto.</p>
@@ -192,7 +179,7 @@
             </section>
 
                     </div>
-                    <section id="menu" class="pt-5 pb-5">
+                    <section id="menu" class="pt-5 pb-5 fundo5">
                             <div class="container">
                                 <div class="row">
                                     <h2 class="section-title text-center mb-5">
@@ -214,7 +201,7 @@
                                             <div class="tab-pane active" id="entradas">
                                                 <div class="row">
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/quesadilla.jpg" alt="coca-cola">
+                                                        <img class="d-block w-100" src="./entradas/quesadilla-min.jpg" alt="quesadilla" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2"> QUESADILHAS</h5>
                                                         <p>Tortilha recheada com Queijo, Chourição, Milho e o nosso molho secreto.</p>
                                                         <ul>
@@ -222,7 +209,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/chillis-best.jpg" alt="Suco">
+                                                        <img class="d-block w-100" src="./entradas/chillis-best-min.jpg" alt="Chillis_Best" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">CHILLI'S BEST</h5>
                                                         <p>Variação de entradas para duas pessoas.</p>
                                                         <ul>
@@ -230,7 +217,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/macaroca-de-milho.jpg" alt="coca-cola">
+                                                        <img class="d-block w-100" src="./entradas/macaroca-de-milho-min.jpg" alt="MAÇAROCA" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">MAÇAROCA DE MILHO</h5>
                                                         <p>Milho grelhado com manteiga de alho ou de chilli.</p>
                                                         <ul>
@@ -240,7 +227,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/onion-rings.png" alt="Suco">
+                                                        <img class="d-block w-100" src="./entradas/onion-rings.png" alt="onion-rings" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">ONION RINGS</h5>
                                                         <p>Rodelas de Cebolas panadas acompanhadas com Guacamole.</p>
                                                         <ul>
@@ -250,7 +237,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/chilli-popoers.png" alt="coca-cola">
+                                                        <img class="d-block w-100" src="./entradas/chilli-popoers.png" alt="chilli-popoers" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">CHILLI POPPERS</h5>
                                                         <p>Almofadinhas de Jalapeño Verdes e Vermelhos panados com recheio de Queijo Creme.</p>
                                                         <ul>
@@ -260,7 +247,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/gambas-ao-alho.jpg" alt="Suco">
+                                                        <img class="d-block w-100" src="./entradas/gambas-ao-alho-min.jpg" alt="gambas-ao-alho" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">GAMBAS AL AJO</h5>
                                                         <p>Gambas ao Alho.</p>
                                                         <ul>
@@ -270,7 +257,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/guacamole_chilly_s_480-150x150.png" alt="Suco">
+                                                        <img class="d-block w-100" src="./entradas/guacamole_chilly_s_480-150x150.png" alt="guacamole" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">GUACAMOLE</h5>
                                                         <p>Preparado de Abacate envolvido na mesa com Chips de Nachos.</p>
                                                         <ul>
@@ -280,7 +267,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/special-nachos.jpg" alt="Suco">
+                                                        <img class="d-block w-100" src="./entradas/special-nachos-min.jpg" alt="especial-nachos" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">SPECIAL NACHOS</h5>
                                                         <p>Nachos recheados com vários molhos caseiros, envolvidos com jalapeños e cebola roxa, cobertos de queijo gratinado e por fim acompanhados com molho Sour Cream e Guacamole.</p>
                                                         <ul>
@@ -290,7 +277,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./entradas/nachos.jpg" alt="Suco">
+                                                        <img class="d-block w-100" src="./entradas/nachos-min.jpg" alt="nachos" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">NACHOS</h5>
                                                         <p>Nachos envolvidos com jalapeños cobertos de queijo gratinado, acompanhados com molho Sour Cream.</p>
                                                         <ul>
@@ -304,7 +291,7 @@
                                             <div class="tab-pane" id="pratos-principais">
                                                 <div class="row">
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/bulls-eye-burger.jpg" alt="Cerveja">
+                                                        <img class="d-block w-100" src="./Pratos principais/bulls-eye-burger-min.jpg" alt="burg" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">BULL’S EYE BURGER</h5>
                                                         <p>Hamburger de vaca com o nosso molho Dallas recheada com queijo, bacon, pickles e alface, acompanhada com batata Fry N’ Dip.</p>
                                                         <ul>
@@ -314,7 +301,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/jambalaya.jpg" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/jambalaya-min.jpg" alt="jambalaya" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">JAMBALAYA DE GAMBAS</h5>
                                                         <p>Salteado de arroz “carabeño” com fruta exótica, gambas, legumes e creme de coco.</p>
                                                         <ul>
@@ -324,7 +311,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/t-bone.png" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/t-bone.png" alt="t-bone" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">T-BONE STEAK</h5>
                                                         <p>Corte típico Texano com 850 gramas maturado por 25 dias, de um lado o vazio do outro o lombo, disfruta de dois prazeres em um.</p> <ul>
                                                             <li>
@@ -333,7 +320,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/spare-ribs.jpg" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/spare-ribs-min.jpg" alt="spare-ribs" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">SPARE RIBS</h5>
                                                         <p>Costelinhas de Porco suculentas, marinadas com molho Barbecue.</p>
                                                         <ul>
@@ -345,7 +332,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/lonestar-steak.jpg" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/lonestar-steak-min.jpg" alt="lonestar-steak" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">LONE STAR STEAK</h5>
                                                         <p>250 gramas de Lombo Premium envolvido em bacon.</p>
                                                         <ul>
@@ -355,7 +342,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/chilli-con-carne.jpg" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/chilli-con-carne-min.jpg" alt="chilli-con-carne" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">CHILLI CON CARNE</h5>
                                                         <p>Estufado de carne bovina com feijão, milho e chillis.</p>
                                                         <ul>
@@ -365,7 +352,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/burritos.jpg" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/burritos-min.jpg" alt="burritos" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">BURRITOS</h5>
                                                         <p>Duas tortilhas de farinha enroladas e recheadas.</p>
                                                         <ul>
@@ -375,7 +362,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/tacos.jpg" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/tacos-min.jpg" alt="tacos" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">TACOS</h5>
                                                         <p>Duas tortilhas de milho crocantes dobradas e recheadas..</p>
                                                         <ul>
@@ -385,7 +372,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Pratos principais/fry-and-dip.jpg" alt="Vinho">
+                                                        <img class="d-block w-100" src="./Pratos principais/fry-and-dip-min.jpg" alt="acompanhamentos" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">ACOMPANHAMENTOS</h5>
                                                         <ul>
                                                             <li>
@@ -404,7 +391,7 @@
                                             <div class="tab-pane" id="sobremesas">
                                                 <div class="row">
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./sobremesa/bayleys-helado.jpg" alt="entrada">
+                                                        <img class="d-block w-100" src="./sobremesas/bayleys-helado-min.jpg" alt="BAILEYS" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">BAILEYS HELADO</h5>
                                                         <p>Gelado de Chocolate de Leite e Chocolate Branco, regado com Baileys e Chantilly.</p>
                                                         <ul>
@@ -414,7 +401,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./sobremesa/coco-pina.jpg" alt="entrada">
+                                                        <img class="d-block w-100" src="./sobremesas/coco-pina-min.jpg" alt="coco-pina" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">COCO PIÑA</h5>
                                                         <p>Ananás fresco com Leite de coco, Mel, uma bola de gelado de Coco e Chantilly.</p>
                                                         <ul>
@@ -424,7 +411,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./sobremesa/pastel-de-chocolate.jpg" alt="entrada">
+                                                        <img class="d-block w-100" src="./sobremesas/pastel-de-chocolate-min.jpg" alt="pastel-de-chocolate" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">PASTEL DE CHOCOLATE</h5>
                                                         <p>Bolo cremoso de Chocolate quente com uma bola de Baunilha e Chantilly.</p>
                                                         <ul>
@@ -434,7 +421,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./sobremesa/churritos.jpg" alt="entrada">
+                                                        <img class="d-block w-100" src="./sobremesas/churritos-min.jpg" alt="churritos" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">CHURRITOS</h5>
                                                         <p>6 churros quentes envolvidos em açúcar e canela
                                                         para molhar no nosso Dulce de Leche, é de lamber os dedos .</p>
@@ -445,7 +432,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./sobremesa/churritos.jpg" alt="entrada">
+                                                        <img class="d-block w-100" src="./sobremesas/el-surpresa-min.jpg" alt="la-surpresa" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">LA SORPRESA CHILLI’S</h5>
                                                         <p>Variação de sobremesas para 2 pessoas.</p>
                                                         <ul>
@@ -459,42 +446,42 @@
                                             <div class="tab-pane" id="bebidas">
                                                 <div class="row">
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/agua.png" alt="pizza">
+                                                        <img class="d-block w-100" src="./Bebidas/agua.png" alt="agua" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">ÁGUA VITALIS 37cl</h5>
                                                         <p>Valor - 2,20€</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/agua com gas.jpg" alt="Salmao">
+                                                        <img class="d-block w-100" src="./Bebidas/agua com gas.jpg" alt="agua-das-pedras" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">ÁGUA DAS PEDRAS</h5>
                                                         <p>Valor - 1,70€</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/coca cola.webp" alt="pizza">
+                                                        <img class="d-block w-100" src="./Bebidas/coca cola.webp" alt="coca-cola" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">COCA-COLA</h5>
                                                         <p>Valor - 2,20€</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/Coca_Cola-zero_Logo-150x150.jpg" alt="Salmao">
+                                                        <img class="d-block w-100" src="./Bebidas/Coca_Cola-zero_Logo-150x150.jpg" alt="coca-cola-zero" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">COCA-COLA ZERO</h5>
                                                         <p>Valor - 2,20€</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/Sprite-Logo-2008.png" alt="pizza">
+                                                        <img class="d-block w-100" src="./Bebidas/Sprite-Logo-2008.png" alt="SPRITE" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">SPRITE</h5>
                                                         <p>Valor - 2,20€</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/Fanta-logo.png" alt="Salmao">
+                                                        <img class="d-block w-100" src="./Bebidas/Fanta-logo.png" alt="fanta-laranja" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">FANTA LARANJA</h5>
                                                         <p>Valor - 2,20€</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/rpOFs_JY_400x400.jpg" alt="Salmao">
+                                                        <img class="d-block w-100" src="./Bebidas/rpOFs_JY_400x400.jpg" alt="nestea" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">NESTEA</h5>
                                                         <p> Valor - 2,20€</p>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/cervejas.jpg" alt="Salmao">
+                                                        <img class="d-block w-100" src="./Bebidas/cervejas.jpg" alt="cervejas" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">Cervezas</h5>
                                                         <p>Corona - 3,20€</p>
                                                         <p>Negra Modelo - 3,20€</p>
@@ -506,7 +493,7 @@
                                             <div class="tab-pane" id="cocktails">
                                                 <div class="row">
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/pinacolada.jpg" alt="Bolo de chocolate">
+                                                        <img class="d-block w-100" src="./Bebidas/pinacolada.jpg" alt="pinacolada" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">PIÑA COLADA</h5>
                                                         <p>Cocktail exótico com Malibu, ananás e leite de côco.</p>
                                                         <ul>
@@ -516,7 +503,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/marguerita.jpg" alt="Bolo de chocolate">
+                                                        <img class="d-block w-100" src="./Bebidas/marguerita.jpg" alt="margarita" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">MARGARITA</h5>
                                                         <p>O verdadeiro cocktail mexicano com um perfeito balanço de tequila e lima fresca, decorado com sal.</p>
                                                         <ul>
@@ -526,7 +513,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/mojito-150x150.jpg" alt="Bolo de chocolate">
+                                                        <img class="d-block w-100" src="./Bebidas/mojito-150x150.jpg" alt="mojito" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">MOJITO</h5>
                                                         <p>O nosso mojito dispensa qualquer tipo de apresentação.</p>
                                                         <ul>
@@ -536,7 +523,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/caipirinha-150x150.jpg" alt="Bolo de chocolate">
+                                                        <img class="d-block w-100" src="./Bebidas/caipirinha-150x150.jpg" alt="caipirinha" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">CAIPIRINHA</h5>
                                                         <p>Um classico levado à perfeição .</p>
                                                         <ul>
@@ -546,7 +533,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/lacalavera.jpg" alt="Bolo de chocolate">
+                                                        <img class="d-block w-100" src="./Bebidas/lacalavera.jpg" alt="la-calaveira" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">LA CALAVERA</h5>
                                                         <p>Caveira gigante de gelo granizado, tequila e polpa de fruta com uma coronita inteira a a misturar-se lentamente com o cocktail.</p>
                                                         <ul>
@@ -556,7 +543,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/mexicanmule.jpg" alt="Bolo de chocolate">
+                                                        <img class="d-block w-100" src="./Bebidas/mexicanmule.jpg" alt="mexican-mule" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">MEXICAN MULE</h5>
                                                         <p>Combinação de Cerveja de gengibre e tequila com toque picante.</p>
                                                         <ul>
@@ -566,7 +553,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <img class="d-block w-100" src="./Bebidas/tequilasunrise.jpg" alt="Bolo de chocolate">
+                                                        <img class="d-block w-100" src="./Bebidas/tequilasunrise.jpg" alt="tequilasunrise" loading="lazy">
                                                         <h5 class="text-colored fw-bold mt-2">TEQUILA SUNRISE</h5>
                                                         <p>Tequila silver com sumo de laranja e groselha. O nosso por do sol.</p>
                                                         <ul>
@@ -600,7 +587,7 @@
                                 </div>
                             </div>
                         </section>
-                <section id="contactos" class="pt-5 pb-5">
+                <section id="contactos" class="pt-5 pb-5 fundo6">
                     <div class="container">
                         <div class="row">
                         <h2 class="section-title text-center w-100 mb-4">Contacte <span class="text-colored">-nos</span></h2>
@@ -665,7 +652,11 @@
                     </section>
 
 
-
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+                            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <script>
+                            AOS.init();
+                    </script>
+
                 </body>
                 </html>

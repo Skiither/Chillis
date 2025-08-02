@@ -3,13 +3,71 @@
     }
 
 
-    .navbar {
-        background-color: #e15f41;
-        position: sticky;
-        top: 0;
-        z-index: 1030;
-        transition: border-bottom 0.3s ease;
-    }
+.navbar {
+    background-color: rgba(0, 0, 0, 0.25); 
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    transition: background-color 0.3s ease;
+    color: white; 
+}
+
+
+.fundo1 {
+    background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    border: none;
+}
+
+.fundo2 {
+    background: linear-gradient(to bottom, #442bdb 0%, #89223b 100%);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    border: none;
+}
+
+.fundo3 {
+    background: linear-gradient(to bottom, #89223b 0%, #9c791d 100%);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    border: none;
+}
+
+.fundo4 {
+    background: linear-gradient(to bottom, #9c791d 0%, #4f2ac3 100%);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    border: none;
+}
+
+.fundo5 {
+    background: linear-gradient(to bottom, #4f2ac3 0%, #1b6ca7 100%);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    border: none;
+}
+
+.fundo6 {
+    background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    border: none;
+}
+
 
 
     #cabecalho .nav .nav-link,
