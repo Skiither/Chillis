@@ -1,69 +1,29 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 70px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
 body {
   padding-top: 70px;
 }
 
 .navbar {
-  min-height: 70px; 
-  position:fixed;
+  min-height: 70px;
+  position: fixed;
   top: 0;
   z-index: 1030;
   width: 100%;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(8px);
   color: white;
   transition: background-color 0.3s ease;
-}
-
-.fundo1 {
-  padding-top: 70px; 
-  padding-bottom: 40px;
-  margin: 0;
-  background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
-  color: white;
-}
-.fundo2 {
-  background: linear-gradient(to bottom, #442bdb 0%, #89223b 100%);
-  color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0;
-  border: none;
-}
-
-.fundo3 {
-  background: linear-gradient(to bottom, #89223b 0%, #9c791d 100%);
-  color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0;
-  border: none;
-}
-
-.fundo4 {
-  background: linear-gradient(to bottom, #9c791d 0%, #4f2ac3 100%);
-  color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0;
-  border: none;
-}
-
-.fundo5 {
-  background: linear-gradient(to bottom, #4f2ac3 0%, #1b6ca7 100%);
-  color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0;
-  border: none;
-}
-
-.fundo6 {
-  background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
-  color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0;
-  border: none;
 }
 
 #cabecalho .nav .nav-link,
@@ -83,14 +43,52 @@ body {
   background-color: #ffeae6;
 }
 
-.section-title {
-  font-family: Pacifico, cursive;
+.fundo1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+  background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
+  color: white;
 }
 
-.origem-bg,
-#horarios-e-reservas,
-#contactos {
-  background-color: #ffeae6;
+.fundo2 {
+  background: linear-gradient(to bottom, #442bdb 0%, #89223b 100%);
+  color: white;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.fundo3 {
+  background: linear-gradient(to bottom, #89223b 0%, #9c791d 100%);
+  color: white;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.fundo4 {
+  background: linear-gradient(to bottom, #9c791d 0%, #4f2ac3 100%);
+  color: white;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.fundo5 {
+  background: linear-gradient(to bottom, #4f2ac3 0%, #1b6ca7 100%);
+  color: white;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.fundo6 {
+  background: linear-gradient(to bottom, #1b6ca7 0%, #442bdb 100%);
+  color: white;
+  padding: 40px 0;
+  margin: 0;
+}
+
+
+.section-title {
+  font-family: Pacifico, cursive;
 }
 
 .text-colored {
@@ -99,6 +97,12 @@ body {
 
 .redes-sociais-contatos {
   color: black;
+}
+
+.origem-bg,
+#horarios-e-reservas,
+#contactos {
+  background-color: #ffeae6;
 }
 
 .nav-cardapio .nav-link.active,
@@ -111,6 +115,13 @@ body {
   color: #e15f41;
 }
 
+
+.list-no-style li {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+}
+
 .social-links li {
   list-style: none;
   display: inline;
@@ -118,16 +129,6 @@ body {
 }
 
 .social-links a {
-  text-decoration: none;
-}
-
-.horario--e-reservas {
-  background-image: url(./Logo.png);
-}
-
-.list-no-style li {
-  list-style-type: none;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -142,10 +143,11 @@ body {
 
 .container-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
 .card {
@@ -187,14 +189,13 @@ body {
   gap: 1.5rem;
   padding: 0;
   margin: 0;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
 }
-
 
 @media (max-width: 767px) {
   .card {
     width: 100%;
-    height: 280px;
+    height: auto;
   }
 
   .menu {
