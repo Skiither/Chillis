@@ -151,7 +151,6 @@ body {
 }
 
 .card {
-  margin-top: 40px;
   width: calc(25% - 1.125rem);
   height: 450px;
   overflow: hidden;
@@ -202,4 +201,15 @@ body {
   .menu {
     flex-wrap: wrap;
   }
+}
+
+.btn-color {
+  background-color: #ff6f4f; 
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-color:hover {
+  background-color: #ff431e; 
 }
