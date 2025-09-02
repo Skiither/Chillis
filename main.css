@@ -151,6 +151,7 @@ body {
 }
 
 .card {
+  margin-top: 40px;
   width: calc(25% - 1.125rem);
   height: 450px;
   overflow: hidden;
