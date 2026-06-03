@@ -19,15 +19,18 @@ body {
   overflow-x: hidden;
   position: relative;
   background:
-    linear-gradient(180deg,
+    linear-gradient(
+      180deg,
       #21130f 0%,
-      #7f1d1d 18%,
-      #bf5b2c 36%,
-      #f6c343 52%,
-      #2f8f5b 70%,
-      #7f1d1d 86%,
-      #21130f 100%);
-  background-attachment: fixed;
+      #7f1d1d 14%,
+      #bf5b2c 30%,
+      #b18a2d 45%,
+      #2f8f5b 62%,
+      #7f1d1d 82%,
+      #21130f 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: var(--ink);
 }
 
@@ -68,6 +71,7 @@ body {
 }
 
 .fundo1 {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   margin: 0;
@@ -75,38 +79,53 @@ body {
     linear-gradient(135deg, rgba(33, 19, 15, 0.78), rgba(192, 57, 43, 0.58)),
     url("./cards/fogo-min.jpg") center/cover;
   color: white;
+  overflow: hidden;
+}
+
+.fundo1::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(127, 29, 29, 0), #7f1d1d);
+  pointer-events: none;
+}
+
+.fundo1 > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .fundo2 {
-  background: linear-gradient(135deg, rgba(127, 29, 29, 0.78), rgba(191, 91, 44, 0.54));
+  background: transparent;
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo3 {
-  background: linear-gradient(135deg, rgba(191, 91, 44, 0.58), rgba(47, 143, 91, 0.50));
+  background: transparent;
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo4 {
-  background: linear-gradient(135deg, rgba(246, 195, 67, 0.54), rgba(192, 57, 43, 0.56));
+  background: transparent;
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo5 {
-  background: linear-gradient(135deg, rgba(33, 19, 15, 0.72), rgba(127, 29, 29, 0.66));
+  background: transparent;
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo6 {
-  background: linear-gradient(135deg, rgba(47, 143, 91, 0.60), rgba(33, 19, 15, 0.78));
+  background: transparent;
   color: white;
   padding: 40px 0;
   margin: 0;
@@ -128,7 +147,58 @@ body {
 .origem-bg,
 #horarios-e-reservas,
 #contactos {
-  background-color: var(--cream);
+  background-color: transparent;
+}
+
+[data-aos] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+[data-aos].aos-animate,
+[data-aos].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(34px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-34px);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-28px);
+}
+
+[data-aos="fade-up-right"] {
+  transform: translate(-34px, 28px);
+}
+
+[data-aos="fade-left"].aos-animate,
+[data-aos="fade-right"].aos-animate,
+[data-aos="fade-down"].aos-animate,
+[data-aos="fade-up-right"].aos-animate,
+[data-aos="fade-left"].is-visible,
+[data-aos="fade-right"].is-visible,
+[data-aos="fade-down"].is-visible,
+[data-aos="fade-up-right"].is-visible {
+  transform: translate(0, 0);
+}
+
+#horarios-e-reservas {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.58);
+}
+
+#horarios-e-reservas .text-muted {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+#horarios-e-reservas img {
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
 }
 
 .nav-cardapio .nav-link.active,

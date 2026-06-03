@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="main.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-offset="90" data-bs-smooth-scroll="true" tabindex="0">
+<body tabindex="0">
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
             <a href="#" class="navbar-brand m-0 section-title">Chillis Tex Mex</a>
@@ -64,7 +64,7 @@
             <div class="pt-5 pb-5 fundo1">
                 <div class="container">
                     <h2 class="section-title text-center mb-4">Nossas <span class="text-colored">Promoções</span></h2>
-                    <div class="row align-items-center" data-aos="fade-up">
+                    <div class="row align-items-center">
                         <div class="col-md-5 text-center">
                             <img src="./takeaway.jpeg" class="mt-4 d-block w-100 rounded me-md-3"
                                 style="max-width: 340px;" alt="foto do takeaway" />
@@ -110,11 +110,11 @@
             <div class="origem-bg pt-5 pb-5 fundo2">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5" data-aos="fade-right">
+                        <div class="col-md-5" data-aos="fade-down">
                             <img src="./tex-mex.png" class="d-block w-100 rounded" style="height: 480px;"
                                 alt="foto do restaurante" />
                         </div>
-                        <div class="col-md-7 mt-3 mt-md-0" data-aos="fade-left">
+                        <div class="col-md-7 mt-3 mt-md-0" data-aos="fade-down">
                             <h2 class="section-title ps-5"> Origem da <span class="text-colored"> nossa cozinha</span>
                             </h2>
                             <p class="mt-4">A cozinha Tex-Mex tem uma história rica e fascinante que reflete a fusão
@@ -139,16 +139,16 @@
                 <p class="text-center mb-3">Conheça o nosso espaço e venha visitar-nos pessoalmente! Veja o vídeo para
                     saber mais.</p>
                 <div class="ratio ratio-16x9 mb-4">
-                    <iframe data-aos="fade-up" src="https://www.youtube.com/embed/Wz-zwDfhqK0" title="Chillis"
+                    <iframe data-aos="fade-left" src="https://www.youtube.com/embed/Wz-zwDfhqK0" title="Chillis"
                         allowfullscreen
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                     </iframe>
                 </div>
                 <div class="container-card">
-                    <div class="card" data-aos="fade-up" data-aos-delay="0"><img src="./cards/galera_reunida-min.jpg" alt=""></div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="100"><img src="./cards/sai_um_amigo-min.jpg" alt=""></div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="200"><img src="./cards/fogo-min.jpg" alt=""></div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="300"><img src="./cards/aproveite-min.jpg" alt=""></div>
+                    <div class="card" data-aos="fade-up-right"><img src="./cards/galera_reunida-min.jpg" alt=""></div>
+                    <div class="card" data-aos="fade-up-right"><img src="./cards/sai_um_amigo-min.jpg" alt=""></div>
+                    <div class="card" data-aos="fade-up-right"><img src="./cards/fogo-min.jpg" alt=""></div>
+                    <div class="card" data-aos="fade-up-right"><img src="./cards/aproveite-min.jpg" alt=""></div>
                 </div>
                 <p class="text-center fst-italic text-muted">O nosso espaço é pet friendly, mas para garantir conforto,
                     apenas permitimos até <strong>4 animais de estimação de cada vez</strong>. Por favor, confirme a sua
@@ -157,11 +157,11 @@
         </section>
         <section id="horarios-e-reservas" class="pt-5 pb-5 fundo4">
             <div class="container">
-                <div class="row" data-aos="fade-up">
+                <div class="row" data-aos="fade-up-right">
                     <h2 class="section-title text-center"> Horários <span class="text-colored">e reservas</span> </h2>
                 </div>
-                <div class="row d-flex align-items-stretch mt-4">
-                    <div class="col-md-6" data-aos="fade-right">
+                <div class="row d-flex align-items-stretch mt-4" data-aos="fade-up-right">
+                    <div class="col-md-6" data-aos="fade-up-right">
                         <img src="./Captura de tela 2025-06-25 094645.png" alt="Horários"
                             class="d-block w-100 rounded mb-2 img-horario-reserva" />
                         <h3 class="section-title text-colored fs-4 text-center">
@@ -181,7 +181,7 @@
                             Para informações atualizadas, consulte as nossas redes sociais.
                         </p>
                     </div>
-                    <div class="col-md-6" data-aos="fade-left">
+                    <div class="col-md-6" data-aos="fade-up-right">
                         <img src="./reserva.jpg" alt="Imagem da mesa de comida"
                             class="d-block w-100 rounded mb-2 img-horario-reserva" />
                         <h3 class="section-title list-unstyled text-colored fs-4 text-center">
@@ -954,18 +954,65 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 750,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 80
+        if (window.AOS) {
+            AOS.init({
+                duration: 750,
+                easing: 'ease-out-cubic',
+                once: false,
+                mirror: true,
+                offset: 80
+            });
+        }
+
+        const animatedElements = document.querySelectorAll('[data-aos]');
+        const revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                } else {
+                    entry.target.classList.remove('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.18,
+            rootMargin: '0px 0px -8% 0px'
         });
 
+        animatedElements.forEach(function (element) {
+            revealObserver.observe(element);
+        });
+
+        const headerLinks = Array.from(document.querySelectorAll('#cabecalho .nav-link[href^="#"]'));
+        const trackedSections = headerLinks
+            .map(function (link) {
+                return document.querySelector(link.getAttribute('href'));
+            })
+            .filter(Boolean);
+
+        function setActiveSection() {
+            const headerOffset = 120;
+            const scrollPosition = window.scrollY + headerOffset;
+            let currentSection = null;
+
+            trackedSections.forEach(function (section) {
+                if (section.offsetTop <= scrollPosition) {
+                    currentSection = section;
+                }
+            });
+
+            headerLinks.forEach(function (link) {
+                const isActive = currentSection && link.getAttribute('href') === '#' + currentSection.id;
+                link.classList.toggle('active', isActive);
+            });
+        }
+
+        window.addEventListener('scroll', setActiveSection, { passive: true });
+        window.addEventListener('resize', setActiveSection);
         window.addEventListener('load', function () {
-            bootstrap.ScrollSpy.getOrCreateInstance(document.body, {
-                target: '#cabecalho',
-                offset: 90
-            }).refresh();
+            setActiveSection();
+            if (window.AOS) {
+                AOS.refresh();
+            }
         });
     </script>
 </body>
