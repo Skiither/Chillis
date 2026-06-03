@@ -18,7 +18,16 @@ body {
   padding-top: 70px;
   overflow-x: hidden;
   position: relative;
-  background-color: var(--cream);
+  background:
+    linear-gradient(180deg,
+      #21130f 0%,
+      #7f1d1d 18%,
+      #bf5b2c 36%,
+      #f6c343 52%,
+      #2f8f5b 70%,
+      #7f1d1d 86%,
+      #21130f 100%);
+  background-attachment: fixed;
   color: var(--ink);
 }
 
@@ -42,6 +51,12 @@ body {
   color: #fff;
 }
 
+#cabecalho .nav .nav-link {
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
 #cabecalho .nav .nav-link.active {
   background-color: rgba(246, 195, 67, 0.18);
   color: var(--corn);
@@ -57,41 +72,41 @@ body {
   padding-bottom: 40px;
   margin: 0;
   background:
-    linear-gradient(135deg, rgba(33, 19, 15, 0.88), rgba(192, 57, 43, 0.84)),
+    linear-gradient(135deg, rgba(33, 19, 15, 0.78), rgba(192, 57, 43, 0.58)),
     url("./cards/fogo-min.jpg") center/cover;
   color: white;
 }
 
 .fundo2 {
-  background: linear-gradient(135deg, #7f1d1d 0%, #bf5b2c 100%);
+  background: linear-gradient(135deg, rgba(127, 29, 29, 0.78), rgba(191, 91, 44, 0.54));
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo3 {
-  background: linear-gradient(135deg, #bf5b2c 0%, #2f8f5b 100%);
+  background: linear-gradient(135deg, rgba(191, 91, 44, 0.58), rgba(47, 143, 91, 0.50));
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo4 {
-  background: linear-gradient(135deg, #f6c343 0%, #c0392b 100%);
+  background: linear-gradient(135deg, rgba(246, 195, 67, 0.54), rgba(192, 57, 43, 0.56));
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo5 {
-  background: linear-gradient(135deg, #21130f 0%, #7f1d1d 100%);
+  background: linear-gradient(135deg, rgba(33, 19, 15, 0.72), rgba(127, 29, 29, 0.66));
   color: white;
   padding: 40px 0;
   margin: 0;
 }
 
 .fundo6 {
-  background: linear-gradient(135deg, #2f8f5b 0%, #21130f 100%);
+  background: linear-gradient(135deg, rgba(47, 143, 91, 0.60), rgba(33, 19, 15, 0.78));
   color: white;
   padding: 40px 0;
   margin: 0;
